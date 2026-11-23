@@ -1939,19 +1939,26 @@ li = [x for x in li if x%5!=0 and x%7!=0]
 print(li)
 ```
 
+
 ### Question 89
+
+**Question:**
+
 By using list comprehension, please write a program to print the list after removing the 0th, 2nd, 4th,6th numbers in [12,24,35,70,88,120,155].
 
-Hints:
+**Hints:**
+
 Use list comprehension to delete a bunch of element from a list.
 Use enumerate() to get (index, value) tuple.
 
-Solution:
+**Solution:**
+
 ```python
-li = [12,24,35,70,88,120,155]
-li = [x for (i,x) in enumerate(li) if i%2!=0]
+li = [12, 24, 35, 70, 88, 120, 155]
+li = [x for (i, x) in enumerate(li) if i % 2 != 0]
 print(li)
-```
+
+
 
 ### Question 90
 By using list comprehension, please write a program generate a 3*5*8 3D array whose each element is 0.
@@ -2164,4 +2171,3 @@ numlegs=94
 solutions=solve(numheads,numlegs)
 print(solutions)
 ```
-
